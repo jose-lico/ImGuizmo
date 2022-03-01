@@ -1,4 +1,4 @@
-project "DuskEngine"
+project "ImGuizmo"
 	kind "StaticLib"
 	language "C++"
 
