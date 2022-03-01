@@ -13,7 +13,7 @@ project "DuskEngine"
 
     includedirs
 	{
-        "include/ImGuizmo"
+        "include/ImGuizmo",
         dependenciesDir .. "/imgui/include/imgui"
     }
 
