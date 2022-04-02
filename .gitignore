@@ -1,2 +1,8 @@
 build/
 .*/
+
+bin
+bin-int
+
+*.vcxproj
+*.vcxproj.filters
