@@ -1,9 +1,12 @@
 project "ImGuizmo"
 	kind "StaticLib"
 	language "C++"
+	configmap {
+        ["ReleaseNoImGui"] = "Release"
+    }
 
-	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
+	targetdir ("%{wks.location}/bin/" .. outputDir .. "/%{prj.name}")
+	objdir ("%{wks.location}/bin-int/" .. outputDir .. "/%{prj.name}")
 
     files
 	{
@@ -33,7 +36,4 @@ project "ImGuizmo"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "On"
-
-	filter "configurations:MinSizeRelease"
-		runtime "Release"
-		optimize "On"
+		
