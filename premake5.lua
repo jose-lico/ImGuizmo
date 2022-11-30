@@ -24,7 +24,7 @@ project "ImGuizmo"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "On"
 		systemversion "latest"
 
 	filter "system:linux"
